@@ -36,11 +36,11 @@ body {
 }
 
 .left p {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 25px;
+  line-height: 25px;
 }
 
-/* RIGHT */
+
 .right-wrap {
   width: 396px;
   text-align: center;
@@ -48,8 +48,8 @@ body {
 
 .login-box {
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 23px;
+  border-radius: 9px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
