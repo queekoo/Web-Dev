@@ -1,0 +1,115 @@
+{
+  "info": {
+    "name": "Online Shop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get All Categories",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/" }
+          }
+        },
+        {
+          "name": "Get Category by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/1/" }
+          }
+        },
+        {
+          "name": "Get Products by Category",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/1/products/" }
+          }
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"New Category\"}"
+            }
+          }
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/1/" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Updated Category\"}"
+            }
+          }
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://127.0.0.1:8000/api/categories/1/" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://127.0.0.1:8000/api/products/" }
+          }
+        },
+        {
+          "name": "Get Product by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://127.0.0.1:8000/api/products/1/" }
+          }
+        },
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://127.0.0.1:8000/api/products/" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"New Product\", \"price\": 9.99, \"description\": \"Product description\", \"count\": 10, \"is_active\": true, \"category\": 1}"
+            }
+          }
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://127.0.0.1:8000/api/products/1/" },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Updated Product\", \"price\": 19.99, \"description\": \"Updated description\", \"count\": 5, \"is_active\": true, \"category\": 1}"
+            }
+          }
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://127.0.0.1:8000/api/products/1/" }
+          }
+        }
+      ]
+    }
+  ]
+}
